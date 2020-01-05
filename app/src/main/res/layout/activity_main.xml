@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="600dp"
+        android:text="calender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/asd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDOB"
+        app:layout_constraintEnd_toStartOf="@+id/txtDOB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtDOB" />
+
+    <TextView
+        android:id="@+id/txtage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        app:layout_constraintBottom_toBottomOf="@+id/editAge"
+        app:layout_constraintEnd_toEndOf="@+id/asd"
+        app:layout_constraintStart_toStartOf="@+id/asd"
+        app:layout_constraintTop_toTopOf="@+id/editAge" />
+
+    <TextView
+        android:id="@+id/txtsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min Basic Saving (RM)"
+        app:layout_constraintBottom_toBottomOf="@+id/editSave"
+        app:layout_constraintEnd_toEndOf="@+id/txtage"
+        app:layout_constraintStart_toStartOf="@+id/txtage"
+        app:layout_constraintTop_toTopOf="@+id/editSave" />
+
+    <TextView
+        android:id="@+id/txtInvestment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Investment"
+        app:layout_constraintBottom_toBottomOf="@+id/editInvestment"
+        app:layout_constraintEnd_toEndOf="@+id/txtsave"
+        app:layout_constraintStart_toStartOf="@+id/txtsave"
+        app:layout_constraintTop_toTopOf="@+id/editInvestment" />
+
+    <TextView
+        android:id="@+id/editAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/editSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtage"
+        app:layout_constraintTop_toBottomOf="@+id/txtDOB" />
+
+    <TextView
+        android:id="@+id/editSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/editInvestment"
+        app:layout_constraintEnd_toEndOf="@+id/editAge"
+        app:layout_constraintStart_toStartOf="@+id/editAge"
+        app:layout_constraintTop_toBottomOf="@+id/txtDOB" />
+
+    <TextView
+        android:id="@+id/editInvestment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editAge"
+        app:layout_constraintStart_toStartOf="@+id/editAge"
+        app:layout_constraintTop_toBottomOf="@+id/txtDOB" />
+
+    <ImageButton
+        android:id="@+id/btnCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDOB"
+        app:layout_constraintEnd_toEndOf="@+id/editAge"
+        app:layout_constraintStart_toEndOf="@+id/txtDOB"
+        app:layout_constraintTop_toTopOf="@+id/txtDOB"
+        app:srcCompat="@drawable/calendar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
